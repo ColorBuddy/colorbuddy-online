@@ -1,0 +1,9 @@
+@import '../variables/variables';
+
+.container {
+  width: 67.5%;
+  margin: auto;
+  @include mobile {
+    width: 100%;
+  }
+}

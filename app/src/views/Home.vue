@@ -2,7 +2,7 @@
   <div class="home">
     <c-header></c-header>
     <div class="body">
-      hello world
+      <palette-view></palette-view>
     </div>
     <c-footer></c-footer>
   </div>
@@ -10,11 +10,13 @@
 
 <script>
 import CHeader from '../components/header/Header';
+import PaletteView from './PaletteView';
 import CFooter from '../components/footer/Footer';
 
 export default {
   components: {
     CHeader,
+    PaletteView,
     CFooter
   }
 }

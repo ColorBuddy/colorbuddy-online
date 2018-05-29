@@ -70,7 +70,7 @@
   }
 }
 
-@media fullhd {
+@mixin fullhd {
   @media screen and (min-width: $fullhd) {
     @content;
   }

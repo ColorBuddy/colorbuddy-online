@@ -1,7 +1,7 @@
 <template>
   <div id="footer">
     <footer>
-      lol
+      Footer content
     </footer>
   </div>
 </template>
