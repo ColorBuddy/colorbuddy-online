@@ -1,7 +1,10 @@
-$brand-blue: #5d86f7;
+$brand-blue: #5586ff;
 $brand-green: #85fbc5;
 $brand-yellow: #fef86f;
 $brand-red: #ed5b55;
+
+$egg-white: #f6f8fa;
+$grey: #3d4952;
 
 $shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 
@@ -14,3 +17,5 @@ $desktop: 960px + (2 * $gap) !default;
 $widescreen: 1152px + (2 * $gap) !default;
 // 1344px container + 4rem
 $fullhd: 1344px + (2 * $gap) !default;
+
+$rounding: 0.25rem;

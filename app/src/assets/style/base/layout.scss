@@ -1,6 +1,7 @@
 @import '../variables/variables';
 
 .container {
+  display: inherit;
   width: 67.5%;
   margin: auto;
   @include mobile {

@@ -1,7 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
+@import '../variables/variables';
+
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #f6f8fa;
-  color: #3d4952;
+  background-color: $egg-white;
+  color: $grey;
+}
+
+input,
+button,
+submit {
+  border: none;
+}
+
+.button {
+  padding: 1em;
+  margin: 0em 0.5em;
+  border-radius: $rounding;
+  color: $grey;
+
+  &.primary {
+    background-color: $brand-blue;
+    color: $egg-white;
+  }
 }

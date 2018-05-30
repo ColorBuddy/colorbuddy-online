@@ -1,15 +1,18 @@
 <template>
   <div id="header">
     <div class="header">
-      <div class="header-brand">
-        <div class="brand-image">
-          <img src="../../assets/colorbuddy-branding.png" alt="Colorbuddy Logo">
+      <div class="container">
+        <div class="header-brand">
+          <div class="brand-image">
+            <img src="../../assets/colorbuddy-branding.png" alt="Colorbuddy Logo">
+          </div>
         </div>
-      </div>
-      <div class="header-items">
-        <div class="header-item">Item 1</div>
-        <div class="header-item">Item 2</div>
-        <div class="header-item">Menu</div>
+        <div class="header-items">
+          <div class="header-item">
+            Try the browser extension
+            <button class="button primary">Download</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -19,8 +22,9 @@
 @import '../../assets/style/variables/variables.scss';
 
 .header {
+  font-weight: bold;
   display: flex;
-  height: 4em;
+  height: 6em;
   background-color: #fff;
   box-shadow: $shadow;
   .header-brand {
@@ -28,7 +32,7 @@
     .brand-image {
       height: inherit;
       img {
-        margin: 0.5em 0.5em;
+        margin: 1.5em 1.5em;
         height: 3em;
       }
     }
