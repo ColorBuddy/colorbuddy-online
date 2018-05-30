@@ -32,7 +32,7 @@
     .brand-image {
       height: inherit;
       img {
-        margin: 1.5em 1.5em;
+        margin: 1.5em 1em;
         height: 3em;
       }
     }
@@ -45,7 +45,6 @@
       display: flex;
       align-items: center;
       font-size: 1em;
-      padding: 0.5em;
     }
   }
 }
