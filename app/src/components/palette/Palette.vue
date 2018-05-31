@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import SwatchHolder from './Swatch-holder';
+import SwatchHolder from './SwatchHolder';
 
 export default {
   name: 'palette',
@@ -31,11 +31,11 @@ export default {
 .palette {
   background: #fff;
   margin: 2em 0em;
-  padding: 0.5em;
   box-shadow: $shadow;
   border-radius: $radius;
 
   .palette-header {
+    padding: 0.5em 1em;
     display: flex;
     border-bottom: 2px solid $egg-white;
     margin-bottom: 1em;

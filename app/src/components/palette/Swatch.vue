@@ -20,9 +20,6 @@ export default {
 @import '../../assets/style/variables/variables';
 
 .swatch {
-  width: 3em;
-  height: 3em;
-  margin: 0.25em;
   border-radius: $radius;
 }
 </style>
