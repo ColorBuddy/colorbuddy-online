@@ -17,32 +17,37 @@ $breakpoint-desktop: 1024px;
 $breakpoint-fullhd: 1408px;
 
 @mixin breakpoint($breakpoint) {
-  @if $breakpoint == $size-mobile {
+  @if $breakpoint==$size-mobile {
     @media only screen and (max-width: $breakpoint-mobile) {
       @content;
     }
   }
-  @if $breakpoint == $size-tablet {
+
+  @if $breakpoint==$size-tablet {
     @media only screen and (min-width: $breakpoint-tablet) {
       @content;
     }
   }
-  @if $breakpoint == $size-tablet-only {
+
+  @if $breakpoint==$size-tablet-only {
     @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
       @content;
     }
   }
-  @if $breakpoint == $size-desktop {
+
+  @if $breakpoint==$size-desktop {
     @media only screen and (min-width: $breakpoint-desktop) {
       @content;
     }
   }
-  @if $breakpoint == $size-desktop-only {
+
+  @if $breakpoint==$size-desktop-only {
     @media only screen and (min-width: $breakpoint-desktop) and (max-width: $breakpoint-fullhd) {
       @content;
     }
   }
-  @if $breakpoint == $size-fullhd {
+
+  @if $breakpoint==$size-fullhd {
     @media only screen and (min-width: $breakpoint-fullhd) {
       @content;
     }
