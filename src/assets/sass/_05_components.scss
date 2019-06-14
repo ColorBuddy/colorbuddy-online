@@ -1,0 +1,24 @@
+/*
+Components
+specific UI components.
+This is where majority of our work takes place and our UI components are often composed of Objects and Components
+*/
+
+@import './01_tools';
+
+.navigation {
+  padding: 12px 8px;
+  box-shadow: 0px 2px 4px rgba(150, 150, 150, 0.1);
+
+  @include breakpoint($size-desktop) {
+    padding: 12px 12vw;
+  }
+
+  &-item {
+    height: 3em;
+
+    img {
+      height: 36px;
+    }
+  }
+}
