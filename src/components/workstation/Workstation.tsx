@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { mColor } from '../../models/mColor'
 import { mPalette } from '../../models/mPalette'
 import { Color } from './Color'
+import Picker from '../colorpicker/Picker'
 
 let testPalette01 = new mPalette('test palette 01')
 testPalette01.addColor(new mColor('ff3322'))
@@ -32,22 +33,25 @@ export class Workstation extends Component<{}, WorkstationState> {
   }
   render() {
     return (
-      <ul>
-        {this.state.palettes.map((x, i) => (
-          <li>
-            {x.name}
+      <div className="workstation">
+        <ul>
+          {this.state.palettes.map((x, i) => (
+            <li>
+              {x.name}
 
-            <ul>
-              {x.colors.map((y) => (
-                <li>
-                  <Color color={y} />
-                </li>
-              ))}
-              <li onClick={this.addColorHandler.bind(this, i)}>ADD</li>
-            </ul>
-          </li>
-        ))}
-      </ul>
+              <ul>
+                {x.colors.map((y) => (
+                  <li>
+                    <Color color={y} />
+                  </li>
+                ))}
+                <li onClick={this.addColorHandler.bind(this, i)}>ADD</li>
+              </ul>
+            </li>
+          ))}
+        </ul>
+        <Picker color={new mColor('ff3322')} />
+      </div>
     )
   }
 }

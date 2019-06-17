@@ -31,3 +31,39 @@ This is where majority of our work takes place and our UI components are often c
   background-color: #ffffff;
   border-radius: 4px;
 }
+
+// PICKER 
+.picker {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 2fr 300px;
+  grid-template-rows: 300px 22px 44px;
+  background-color: #ffffff;
+  box-shadow: 0px -2px 4px 2px rgba(150, 150, 150, 0.1);
+
+  &-preview {
+    grid-column: 2;
+    grid-row: 1;
+    height: 44px;
+    border-radius: 2px;
+    background-color: goldenrod;
+  }
+
+  &-canvas {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 2px;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent), linear-gradient(to left, rgb(255, 0, 0), rgb(255, 255, 255));
+  }
+
+  &-hue {
+    grid-column: 1;
+    grid-row: 2;
+    height: 22px;
+    border-radius: 2px;
+    background: linear-gradient(to left, red, yellow, lime, cyan, blue, magenta, red);
+  }
+}

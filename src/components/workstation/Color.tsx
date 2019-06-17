@@ -3,11 +3,11 @@ import { mColor } from '../../models/mColor'
 import '../../assets/libs/pickr/src/scss/themes/monolith.scss'
 import Pickr from '../../assets/libs/pickr/src/js/pickr'
 
-type iColorProps = {
+type colorProps = {
   color: mColor
 }
 
-const Color: React.FC<iColorProps> = (props) => {
+const Color: React.FC<colorProps> = (props) => {
   let fieldStyle: CSSProperties = {
     backgroundColor: `#${props.color.hexValue}`,
   }
