@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { MouseEvent } from 'react'
 
 const PickerCanvas: React.FC = () => {
-  return <div className="picker-canvas">Picker Canvas</div>
+  const startHandler = (event: MouseEvent) => {
+    console.log(event.target)
+  }
+  return (
+    <div onMouseDown={startHandler} className="picker-canvas">
+      Picker Canvas
+    </div>
+  )
 }
 
 export default PickerCanvas

@@ -1,7 +1,6 @@
 import React from 'react'
 import PickerCanvas from './PickerCanvas'
 import PickerHue from './PickerHue'
-import PickerCursor from './PickerCursor'
 import PickerAlpha from './PickerAlpha'
 import PickerPreview from './PickerPreview'
 import { mColor } from '../../models/mColor'
@@ -16,6 +15,7 @@ const Picker: React.FC<pickerProps> = (props) => {
       <PickerPreview />
       <PickerCanvas />
       <PickerHue />
+      <PickerAlpha />
     </div>
   )
 }

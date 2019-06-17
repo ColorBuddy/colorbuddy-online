@@ -1,7 +1,7 @@
 import React from 'react'
 
 const PickerAlpha: React.FC = () => {
-  return <div>Picker Alpha</div>
+  return <div className="picker-alpha">Picker Alpha</div>
 }
 
 export default PickerAlpha
